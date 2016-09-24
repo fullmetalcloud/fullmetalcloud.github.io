@@ -15,15 +15,26 @@
     		text-align: left;
 		}
 		body {
-
 			background: #ffffff url("Penguins.jpg") left top;
-			
 			/*
 			background-color: #ffffff;
 			background-image: url("img_tree.png");
     		background-repeat: no-repeat;
     		background-attachment: fixed;
     		background-position: right top;*/
+		}
+		table {
+    		font-family: arial, sans-serif;
+    		border-collapse: collapse;
+    		width: 100%;
+		}
+		td, th {
+		    border: 1px solid #dddddd;
+ 		    text-align: left;
+    		padding: 8px;
+		}
+		tr:nth-child(even) {
+    		background-color: #dddddd;
 		}
 		</style>
 	</head>
@@ -53,5 +64,22 @@
 			Soon I will be learning how to use Ruby on Rails and apply to this website. I will be learning from 
 			<a href="https://www.railstutorial.org/book/beginning">www.railstutorial.org/book/beginning</a>.
 		</p>
+		<table>
+			<tr>
+			    <th>Firstname</th>
+			    <th>Lastname</th> 
+			    <th>Age</th>
+			</tr>
+			<tr>
+			    <td>Jill</td>
+			    <td>Smith</td> 
+			    <td>50</td>
+			</tr>
+			<tr>
+			    <td>Eve</td>
+			    <td>Jackson</td> 
+			    <td>94</td>
+			</tr>
+		</table>
 	</body>
 </html>
