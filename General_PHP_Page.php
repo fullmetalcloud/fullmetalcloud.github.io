@@ -56,8 +56,6 @@ function changeOne(input,id)
     	var table = "Name";
     	var col = "name";
 		changeinweb(id,xmlhttp);
-    	xmlhttp.open("GET","checkdatabase.php?q="+input+"&c="+col+" &t="+table,true);
-    	xmlhttp.send();
 	}
 }
 
@@ -70,7 +68,7 @@ function changeOne(input,id)
 <br>
 
 Text Box Label: 
-<input type="text" size=30 name="labelName" onchange="changeName(this.value)"/>
+<input type="text" size=30 name="labelName" onchange="changeOne(this.value,changeName)"/>
 <div id="changeName"><b>Something should change here...</b></div>
 <br><br>
 
