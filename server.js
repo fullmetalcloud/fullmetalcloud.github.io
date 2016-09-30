@@ -2,11 +2,13 @@ var express = require('express');
 var app = express();
 var path = require('path');
 
-app.get('/', function(req, res) {
-	if()
+app.set('port',3000);
 
-	res.sendFile(path.join(__dirname + '/index.html'))
+app.use(express.static(path.join(__dirname,'public')));
+
+var server = app.listen(app.get('port'),function() {
+	var port = server.address().port;
+	console.log('Stuff happening in '+ port);
 });
-app.use('/static', express.static(__dirname));
-app.listen(3000);
 
+console.log('Running in testing server');
