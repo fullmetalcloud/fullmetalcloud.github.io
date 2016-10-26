@@ -1,171 +1,75 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>HTML Resource Page</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="extsheet.css">
-		 <script src="73.29.197.154/hello.js"></script>
-		<style>
-		/*how to comment*/
+<html lang="en">
+<head>
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- load bootstrap -->
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+    
+    <title>EG Resume Site</title>
 
-		h1 {
-			color: red;
-    		text-align: center;
-		}
-		p {
-			color: blue;
-    		text-align: left;
-		}
-		pre {
-			color: black;
-			background-color: white; 
-		}
-		body {
-			background: #ffffff url("background.jpg") fixed left top;
-			background-size:100% 100%;
-			/*
-			background-color: #ffffff;
-			background-image: url("img_tree.png");
-    		background-repeat: no-repeat;
-    		background-attachment: fixed;
-    		background-position: right top;*/
-		}
-		table {
-    		font-family: arial, sans-serif;
-    		border-collapse: collapse;
-    		width: 100%;
-    		padding: 5px;
-		}
-		td, th {
-		    border: 1px solid #dddddd;
- 		    text-align: left;
-    		padding: 8px;
-		}
-		tr:nth-child(odd) {
-    		background-color: #ffffff;
-		}
-		tr:nth-child(even) {
-    		background-color: #dddddd;
-		}
-		</style>
-	</head>
-	<body>
-		<p>
-			<a href="#bootpage">Jump to bootstrap page</a>
-		</p>
-		<h1>
-				<!-- HTML commenting -->
-    			Hello World (affected by internal style)
-		</h1>
-		<h2>
-			These (affected by external style sheet, extsheet.css)
-		</h2>
-		<h3 style="background-color: black; color: green; text-align: center;">
-			Are (affected by inline style)
-		</h3>
-		<h4>
-			Headers
-		</h4>
-		<h5>
-			1-5 in Non-Ascending 
-		</h5>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!-- load bootstrap -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Edward Guevara</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#learnmore">Learn More</a></l>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="home" class="bgimg-main">
+    <div class="caption">
+      <span class="border">My Name is Edward Guevara</span>
+    </div>
+  </div>
+  <div id="about" class="title">
+    <div >
+      <h2>ABOUT</h2>
+    </div>
+  </div>
+  <div class="bgimg-about">
+    <div class="content">
+      <p><strong>My name is Edward Guevara. I am an aspiring Web Developer among many other things. I love to learn about many things, like web and game development, microprocessors and minimaking (Arduino and Raspberry Pi), photography, and cooking. Learning is like a fun, exciting adventure because you improve yourself and you learn more about yourself. I also love to solve puzzles and problems. This, in part, is due to the many years of playing video games and doing jigsaw puzzles. I want to take what I learn and apply to real world problems and see how much more I can learn. Learn more about me on my <a href="www.linkedin.com/in/edward-guevara-6b73b157">LinkedIn</a>.</strong></p>
+    </div>
+  </div>
+  <div id="contact" class="title">
+    <div>
+      <h2>CONTACT</h2>
+    </div>
+  </div>
+  <div class="bgimg-main" style="min-height: 80%;">
+    <div id="contact-form">
+      <a id="foxyform_embed_link_823496" href="http://www.foxyform.com/">foxyform</a>
+      <script type="text/javascript">
+        (function(d, t){
+          var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+          g.src = "http://www.foxyform.com/js.php?id=823496&sec_hash=03db301cb5c&width=100%";
+          s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+      </script>
+    </div>
+  </div>
 
-		<p>
-			<em>I'm hosted with GitHub Pages</em> and <strong>learning to make web pages.</strong>
-			I am learning from <a href="http://learnenough.com/" target="_blank">learnenough.com</a>.
-		</p>
-		<p>
-			Soon I will be learning how to use Ruby on Rails and apply to this website. I will be learning from 
-			<a href="https://www.railstutorial.org/book/beginning" target="_blank">www.railstutorial.org/book/beginning</a>.
-		</p>
-		<pre>
-I am also learning from <a href="http://www.w3schools.com/" target="_blank">www.w3schools.com</a>
-This web page is for personal educational purposes only. There is no intention of plagiarism or infringement.
-		</pre>
-		<h3 id="bootpage"></h3>
-		<p>
-			Here is a link to the bootstrap.js practice page <a href="bootpage.html" target="_blank">bootpage</a>.
-		</p>
-		<p id="angularjs">
-			Here is the link to the angular.js practice page <a href="angularjs.html" target="_blank">angularjs page</a>
-		</p>
 
-		<iframe src="bootpage.html" height="300" width="500" style="text-align:left;"></iframe>
-		<br>
-		<a href="https://www.google.com/search?q=penguins&espv=2&biw=1440&bih=805&source=lnms&tbm=isch&sa=X&ved=0ahUKEwipz_e_8a3PAhVJ5GMKHYvdAycQ_AUIBigB" target="_blank">
-			<img src="Penguins.jpg" alt="Penguins" style="width:304px;height:228px;">
-		</a>
-		<br>
-		<br>
-		<table>
-			<caption>List of Random Names and Ages</caption>
-			<tr>
-			    <th>Firstname</th>
-			    <th>Lastname</th> 
-			    <th>Age</th>
-			</tr>
-			<tr>
-			    <td>Jill</td>
-			    <td>Smith</td> 
-			    <td>50</td>
-			</tr>
-			<tr>
-			    <td>Eve</td>
-			    <td>Jackson</td> 
-			    <td>94</td>
-			</tr>
-			<tr>
-			    <td>Terry</td>
-			    <td>Sol</td> 
-			    <td>23</td>
-			</tr>
-			<tr>
-			    <td>Mary</td>
-			    <td>Bell</td> 
-			    <td>101</td>
-			</tr>
-			<tr>
-			    <td>George</td>
-			    <td>Jefferson</td> 
-			    <td>45</td>
-			</tr>
-			<tr>
-			    <td>Apple</td>
-			    <td>Hackman</td> 
-			    <td>86</td>
-			</tr>
-		</table>
-		<form>
-		<!--<form action="php_page.php" method="POST"> if using PHP server-->
-		<header><h3>Form Input Styles<h3></header>
-		<br>
+</body>
 
-		Text Box Label: 
-		<input type="text" size=30 name="labelName">
-		<br><br>
-
-		Radio Label:
-		<input type="radio" name="radio" value="Yes">Yes
-		<input type="radio" name="radio" value="No">No
-		<br><br>
-
-		Option Label
-		<select name="">
-		  <option value="1">One</option>
-		  <option value="2">Two</option>
-		  <option value="3">Three</option>
-
-		</select>
-		<br><br>
-
-		Check Box Label:<br>
-			<input type="checkbox" name="checkbox" value="1">Label 1<br>
-			<input type="checkbox" name="checkbox" value="2">Label 2<br>
-			<input type="checkbox" name="checkbox" value="3">Label 3<br>
-			<br>
-		<p>
-		<input type=submit value='submit'>
-		<input type=reset value='clear'>
-		</form>
-	</body>
 </html>
