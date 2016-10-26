@@ -24,7 +24,7 @@ h1, h2, h3, h4{
   background-repeat: no-repeat;
   background-color: white;
   background-size: cover;
-  min-height: 400px;
+  min-height: 1000px;
 }
 .bgimg-main {
   background-image: url("bgimg_1.jpg");
