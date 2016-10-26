@@ -27,13 +27,12 @@ h1, h2, h3, h4{
   min-height: 400px;
 }
 .bgimg-main {
-  background-image: url("../bgimg-1.jpg");
+  background-image: url("bgimg-1.jpg");
   min-height: 100%;
 }
 .bgimg-about {
-  background-image: url("../bgimg-2.jpg");
+  background-image: url("bgimg-2.jpg");
 }
-
 .caption {
   position: absolute;
   left: 0;
