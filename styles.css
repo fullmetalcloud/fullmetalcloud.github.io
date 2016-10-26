@@ -16,7 +16,7 @@ h1, h2, h3, h4{
   text-align: justify;
 }
 
-.bgimg-main, .bgimg-about, .bgimg-learnmore  {
+.bgimg-main, .bgimg-about {
   position: relative;
   opacity: 0.85;
   background-attachment: fixed;
@@ -32,9 +32,6 @@ h1, h2, h3, h4{
 }
 .bgimg-about {
   background-image: url("../Resume_Website/img/bgimg-2.jpg");
-}
-.bgimg-learnmore {
-  background-image: url("../Resume_Website/img/bgimg-5.jpg");
 }
 
 .caption {
