@@ -42,7 +42,7 @@ function drawFrameworksChart() {
       easing: 'in'
     },
     'legend':'none',
-    'chartArea':{left:100,top:20,width:"100%",height:"80%"},
+    'chartArea':{left:100,top:20,width:"80%",height:"80%"},
     'width':600,
     'height':400,
     hAxis: {
