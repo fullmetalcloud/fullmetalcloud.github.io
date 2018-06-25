@@ -1,174 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script><!-- load angular -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- load bootstrap -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <title>Ed's Awesome Resume</title>
 
-    <script src="../js/googcharts.js"></script>
-    <script src="../js/main.js"></script>
-    <!-- META -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
 
-    <title>EG Resume Site</title>
+  <!-- SCRIPTS -->
+    <!-- JQUERY, POPPERJS, BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!-- load bootstrap -->
-    <link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- main.js -->
+    <script type="text/javascript" src="./scripts/main.js"></script>
+  <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/animations.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
-  <div class="jumbotron">
-    <h1 class="slide-left">Edward Guevara</h1>
-    <h2 class="slide-left" style="animation-duration: 1.5s;">Developer</h2>
-  </div>
-  <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="200">
-    <div class="container-fluid">
+<body>
+  <div id="header">
+    <nav class="navbar navbar-expand-sm navbar-dark">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+        <a class="navbar-brand slide-left" href="#">EG</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Edward Guevara</a>
       </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#edskill">Skills/education</a></li>          
-          <li><a href="#experience">Experience</a></l>
-          <li><a href="#extras">Extras</a></li>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item slide-left">
+            <a class="nav-link" href="#summary">About</a>
+          </li>
+          <li class="nav-item slide-left">
+            <a class="nav-link" href="#education">Education</a>
+          </li>          
+          <li class="nav-item slide-left">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item slide-left">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item slide-left">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://www.linkedin.com/in/edward-guevara-6b73b157">LinkedIn</a></li>
-        </ul>
       </div>
-    </div>
-  </nav>
-  <div  style="background-color:#bbbdbc;">
-    <div id="about" class="container slide-left" style="background-color:#bbbdbc; animation-duration: 2s;">
-      <div class="col-sm-4">
-        <img src="img/profilepic.jpg" alt="Me" style="width:100%;height:100%;">
-      </div>
-      <div class="col-sm-8">
-      <p>I am an aspiring developer from the great city of Seattle, Washington. I love to learn about many things, like web and game development, microprocessors and minimaking (Arduino and Raspberry Pi), photography, travelling, and cooking. Learning is like a fun, exciting adventure because you improve yourself and you learn more about yourself. I also love to solve puzzles and problems. This is due to the many years of playing video games, doing jigsaw puzzles, and my engineering background. I want to take what I learn and apply to real world problems and see how much more I can learn.</p>
+    </nav>
+    <div id="banner">
+      <div class="container-fluid">
+        <h1 class="slide-left" style="animation-duration: 1.3s;">Edward Guevara</h1>
+        <h2 class="slide-left" style="animation-duration: 1.6s;">Software Developer</h2>
       </div>
     </div>
   </div>
-  <div  id="edskill" class="container-fluid text-center slideanim-bot" style="padding: 40px;">
-    <div class="col-sm-6">
-      <h2><u>SKILLS</u></h2>
-      <ul class="nav nav-tabs nav-justified">
-        <li><a href="javascript:chooseChart('framework')">Frameworks</a></li>
-        <li><a href="javascript:chooseChart('language')">Languages</a></li>
-        <li><a href="javascript:chooseChart('otherskills')"> Other Skills</a></li>
-      </ul>
-      <div id="chart"></div>
-    </div>
-    <div class="col-sm-6">
-      <h2><u>EDUCATION</u></h2>
-      <div>
-        <pre style="font-size: 15px;">
-
-<strong>Masters in Computer Science</strong>
-<em>Sept 2016 - present</em>
-Seattle University
-GPA: 3.5/4.0
-
-
-<strong>Certificate in Fundamentals of Computer Science</strong>
-<em>Sept 2015 - June 2016</em>
-Seattle University
-GPA: 3.5/4.0
-
-
-<strong>Bachelors of Science in Mechanical Engineering</strong>
-<em>Sept 2008 - June 2012</em>
-Seattle University
-GPA: 3.5/4.0
-Received Campion Scholarship and Larry Orr Scholarship
-
-        </pre>
+  <div class="inverse-bg" id="summary">
+    <div class="container-fluid">
+      <div class="row slide-left" style="animation-duration: 1.8s;">
+        <div class="col-lg-2">
+          <p>ABOUT</p>
+        </div>
+        <div class="col-lg-7">
+          <p>I am an aspiring developer from the great city of Seattle, Washington. I love to learn about many things, like machine learning and AI, web development, photography, travelling, and cooking. Learning is like a fun, exciting adventure because you improve yourself and you learn more about yourself. I also love to solve puzzles and problems. This is due to the many years of playing video games and doing jigsaw puzzles. I want to take what I learn and apply to real world problems and see how much more I can learn.</p>
+        </div>
+        <div class="col-lg-3" style="text-align: right;">
+          <a id="pdfButton" href="./ResumeGuevaraEd.pdf" target="_blank">PDF Version</a>
+        </div>
       </div>
     </div>
   </div>
-  <div id="experience" class="container-fluid">
-    <div>
-      <h2><u>EXPERIENCE</u></h2>
+  
+  <div id="education">
+    <div class="container-fluid slideanim-bot">
+      <div class="row">
+        <div class="col-sm-2">
+          <p>EDUCATION</p>
+        </div>
+        <div class="col-sm-7">
+          <ul>
+            <li><strong>Masters in Computer Science</strong>, <em>Seattle University</em></li>
+            <li>GPA: 3.7</li>
+          </ul>
+        </div>
+        <div class="col-sm-3 dateline">
+          <p><em>Sept 2015 - March 2018</em></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-7">
+          <ul>
+            <li><strong>Bachelors of Science in Mechanical Engineering</strong>, <em>Seattle University</em></li>
+            <li>GPA: 3.5</li>
+            <li>Received Campion Scholarship and Larry Orr Scholarship</li>
+            <li>​EIT certified/ Passed the FE exam</li>
+          </ul>
+        </div>
+        <div class="col-sm-3 dateline">
+          <p><em>​Sept 2008 ​- ​June 2012</em></p>
+        </div>
+      </div>
     </div>
-    <div class="timeline" style="padding-bottom: 50px;">
-      <ul>
-        <li>
-          <div class="slideanim-left">
-<p><span>June 2015 - Mar 2016</span></p>
-<span><strong>Retail Lockbox Inc. - Implementation Assistant</strong></span>
-<span> - Implemented customers with check processing and document scanning into the production setting</span>
-<span> - Communicated with IT developers, sale representatives, customers, and supervisors to work on projects and implementation</span>
-<span> - Determined and resolved technical and production issues for customers</span>
-<span> - Documented instructions for implemented customers, new processes, and new programs</span>
-          </div>
-        </li>
-        <li>
-          <div class="slideanim-left">
-<p><span>Oct 2013-June 2015</span></p>
-<span><strong>Retail Lockbox Inc. - Document Specialist III /Accounting Assistant</strong></span>
-<span> - High-paced, time-constricted work involving opening mail, scanning documents, and entering data</span>
-<span> - Handled various types of checks and verify if checks are valid</span>
-<span> - Scanned documents and checks using a Kodak scanner</span>
-<span> - Input data into excel and other programs using 10-key numeric pad</span>
-<span> - Handled billing for various customers</span>
-<span> - Worked on a software team for bug and practical testing</span>
-          </div>
-        </li>
-        <li>
-          <div class="slideanim-left">
-<p><span>Dec 2012-June 2013</span></p>
-<span><strong>TSI - Engineering Assistant</strong></span>
-<span> - Analyzed various samples for customers using laser-induced breakdown spectroscopy (LIBS)</span>
-<span> - Presented the analyses to the customers through presentations and written reports</span>
-<span> - Analyzed samples to use for peer-reviewed articles</span>
-<span> - Drafted engineering drawings for parts used in LIBS Analyses</span>
-          </div>
-        </li>
-        <li>
-          <div class="slideanim-left">
-<p><span>June 2012</span></p>
-<span><strong>Graduated Seattle University</strong></span>
-<span>Bachelors of Science in Mechanical Engineering</span>
-          </div>
-        </li>
-        <li>
-          <div class="slideanim-left">
-<p><span>Sept 2011-June 2012</span></p>
-<span><strong>Seattle University - Senior Design Team Design Project</strong></span>
-<span> - Reduced energy use for kitchen exhaust systems in a team setting</span>
-<span> - Created an energy model of the current kitchen exhaust system</span>
-<span> - Developed possible renovation options</span>
-<span> - Determined cost and savings of installing renovations</span>
-<span> - Contributed to writing and presenting final deliverables of the project</span>
-          </div>
-        </li>
+  </div>
+  <div id="experience">
+    <div class="container-fluid slideanim-bot">
+      <div class="row">
+        <div class="col-sm-2">
+          <p>WORK EXPERIENCE</p>
+        </div>
+        <div class="col-sm-7">
+          <ul>
+            <li><strong>Implementation Assistant</strong>, <em>Retail Lockbox Inc.</em></li>
+            <li>Worked with customers, developers, IT, accounting team, and production team to setup 1 to 2 business clients
+ a month for check processing and document scanning</li>
+          </ul>
+        </div>
+        <div class="col-sm-3 dateline">
+          <p><em>June 2015 - Mar 2016</em></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-7">
+          <ul>
+            <li><strong>Document Specialist III /Accounting Assistant</strong>, <em>Retail Lockbox Inc.</em></li>
+            <li>Managed nearly 1000 physical documents and checks to process and scan for customers</li>
+            <li>Responsible for verifying and sending over 100 invoices by month’s end to customers</li>
+          </ul>
+        </div>
+        <div class="col-sm-3 dateline">
+          <p><em>​Oct 2013 - June 2015</em></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-7">
+          <ul>
+            <li><strong>Engineering Assistant</strong>, <em>TSI</em></li>
+            <li>Analyzed various samples for customers using Laser-Induced Breakdown Spectroscopy (LIBS)</li>
+            <li>​Analyzed samples to use for peer-reviewed articles</li>
+            <li>Drafted engineering drawings for parts used in LIBS Analyses</li>
+          </ul>
+        </div>
+        <div class="col-sm-3 dateline">
+          <p><em>Dec 2012 - June 2013</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="projects">
+    <div class="container-fluid slideanim-bot">
+      <div class="row">
+        <div class="col-sm-2">
+          <p>PROJECTS</p>
+        </div>
+        <div class="col-sm-7">
+          <ul>
+            <li><strong>6-month Research Project</strong></li>
+            <li> ​I implemented the NEAT algorithm and other neural network algorithms to verify the validity of the NEAT algorithm to learn Atari’s Pong using Python, TensorFlow, NumPy, and OpenAI.</li>
+            <li>Github repo can be found <a href="https://github.com/fullmetalcloud/ResearchProj_AIAlgorithms">here</a>.</li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-7">
+          <ul>
+            <li><strong>Hackathon Project at HackSU</strong></li>
+            <li> ​Our team designed and implemented an end-to-end application that determines dungeon and dragon characters based on a personality test and received second place. It was implemented using ReactJS and Axios for the client-side application, NodeJS and ExpressJS for the server-side application, and MongoDB for the database.</li>
+            <li>Client-side repo can be found <a href="https://github.com/fullmetalcloud/Kharisma-client">here</a>.</li>
+            <li>Server-side repo can be found <a href="https://github.com/fullmetalcloud/Kharisma">here</a>.</li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-7">
+          <ul>
+            <li><strong>Relational Database Management System/RDBMS</strong></li>
+            <li> ​​I implemented a database manager using BerkeleyDB for its highly scalable data management services and Hyrise sql-parser to make SQL calls in C++.</li>
+            <li>Github repo can be found <a href="https://github.com/fullmetalcloud/CPSC5300DatabaseManager">here</a>.</li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="footer">
+    <div class="container-fluid">
+      <div class="row" id="contact">
+        <div class="col-sm-2">
+          <p>CONTACT</p>
+        </div>
+        <div class="col-sm-4">
+          <ul>
+            <li>Mobile Phone: 206-595-5398</li>
+            <li>Email: gueved90@gmail.com</li>
+            <li>Location: Seattle, WA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row" style="text-align: right;">
+        <div class="col-sm-12">
+          <p>Last Updated: 06/24/2018</p>
+        </div>
         
-        <li>
-          <div class="slideanim-left">
-<p><span>June 2011-Sept 2011</span></p>
-<span><strong>Seattle University - Research Assistant</strong></span>  
-<span><em>Geochronology on the surface of Mars</em></span>
-<span> - Co-developed geochronology instrument using LIBS</span>
-<span> - Analyzed the potassium composition of rock and glass samples using LIBS for K-Ar dating of the samples</span>
-<span> - Wrote MATLAB software to analyze the accuracy and precision of the LIBS measurements</span>
-<span> - Experimentally studied LIBS signal dependence on laser spot size, laser power density, and spectrometer timing</span>
-<span> - Co-wrote a peer-reviewed journal article and published Spectrochimica Acta</span>
-<span><em>Quantification of Silica in Coal Dust</em></span>
-<span> - Measured silica in coal dust using LIBS</span>
-<span> - Analyzed data using custom written MATLAB software</span>
-<span> - Co-wrote a peer-reviewed journal article and published in Applied Spectroscopy</span>
-          </div>
-        </li>
-      </ul>
+      </div>
     </div>
   </div>
 </body>
