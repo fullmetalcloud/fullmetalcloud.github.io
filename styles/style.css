@@ -20,16 +20,6 @@ h2 {
   font-size: 4vw;
 }
 
-@media screen and (max-width: 600px) {
-  h1 {
-  font-size: 50px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-}
-
 .inverse-bg {
   background-color: #107896;
   color: #FFF;
@@ -97,4 +87,24 @@ h2 {
 
 #contact {
   line-height: 2.5;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+  font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  .container, .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+  #contact {
+    line-height: 1.5;
+  }
 }
