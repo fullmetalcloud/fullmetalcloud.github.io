@@ -13,11 +13,21 @@ ul,li {
 }
 
 h1 {
-  font-size: 9vw;
+  font-size: 7vw;
 }
 
 h2 {
-  font-size: 5vw;
+  font-size: 4vw;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+  font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
 }
 
 .inverse-bg {
@@ -53,7 +63,7 @@ h2 {
 
 #header{
   text-align: center;
-  font: 400 18px/1.5 "Lato", sans-serif;
+  font: 400 18px/1.5 "Ubuntu", sans-serif;
   color: #FFF;
   background-color: #093145;
 }
