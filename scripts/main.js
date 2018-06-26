@@ -21,6 +21,11 @@ $(document).ready(function(){
   //   } // End if
   // });
   
+  //Change myTitle id value to loop through title names and background colors
+  changeMyTitle();
+  window.setInterval(function() { changeMyTitle() }, 6000);
+
+
   // add slide animations to objects when scrolled to
   $(window).scroll(function() {
     $(".slideanim-bot").each(function(){
@@ -45,3 +50,22 @@ $(document).ready(function(){
     });
   });
 })
+
+var cCount = 0;
+var bgColors = "#093145,#829356,#DA621E,#AD2A1A".split(",");
+var colors = "#EFD469,#000,#FFF,#000".split(",");
+var fonts = "Courier New,Lato,Times New Roman".split(",");
+var titles = "Software Developer,Team Player,Enthusiastic Learner,Dungeon Master".split(",");
+
+function changeMyTitle() {
+    $("#header").css({ 
+      "transition": "background-color 1s ease, color 1s ease",
+      "backgroundColor": bgColors[cCount], 
+      "color": colors[cCount]
+    })
+    $("#myTitles").replaceWith( "<h2 class='slide-left-loop' id='myTitles'>" + titles[cCount] + "</h2>" );
+    cCount++;
+    if (cCount == colors.length) {
+        cCount = 0
+    }
+}
