@@ -20,6 +20,10 @@ h2 {
   font-size: 4vw;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 .inverse-bg {
   background-color: #107896;
   color: #FFF;
