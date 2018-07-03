@@ -1,0 +1,158 @@
+
+.slidenav-top {
+  animation-name: slidenav-top;
+  -webkit-animation-name: slidenav-top;
+  animation-duration: 0.25s;
+  -webkit-animation-duration: 0.25s;
+  visibility: visible;
+
+}
+@keyframes slidenav-top {
+  0% {
+    opacity: 1;
+    transform: translateY(-70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slidenav-top {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.slideanim-bot {visibility:hidden;}
+.slide-bot {
+  animation-name: slide-bot;
+  -webkit-animation-name: slide-bot;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  visibility: visible;
+
+}
+@keyframes slide-bot {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide-bot {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.slideanim-left {visibility:hidden;}
+.slide-left{
+  animation-name: slide-left;
+  -webkit-animation-name: slide-left;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+.slide-left-loop{
+  animation-name: slide-left-loop;
+  -webkit-animation-name: slide-left-loop;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  visibility: visible;
+}
+@keyframes slide-left-loop {
+  0% {
+    opacity: 0;
+    transform: translateX(-70%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(70%);
+  }
+}
+@-webkit-keyframes slide-left-loop {
+  0% {
+    opacity: 0;
+    transform: translateX(-70%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(70%);
+  } 
+}
+
+.typeout {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: auto; 
+  letter-spacing: .12em; 
+  animation: 
+    typeout 2.5s steps(30, end);
+}
+
+@media screen and (max-width: 600px) {
+  .typeout {
+    overflow: hidden;
+    white-space: normal !important;
+    margin: auto; 
+    letter-spacing: .10em; 
+    animation: 
+      typeout 2.5s steps(20, end);
+  }
+}
+
+/* The typing effect */
+@keyframes typeout {
+  from { width: 0 }
+  to { width: 100% }
+}

@@ -1,12 +1,43 @@
-.slideanim-bot {visibility:hidden;}
-.slide-bot {
-  animation-name: slide-bot;
-  -webkit-animation-name: slide-bot;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
+
+.slide-nav {
+  animation-name: slide-nav;
+  -webkit-animation-name: slide-nav;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
   visibility: visible;
+
 }
-@keyframes slide-bot {
+@keyframes slide-nav {
+  0% {
+    opacity: 1;
+    transform: translateY(-70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide-nav {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.fade-anim-bot {visibility:hidden;}
+.fade-bot {
+  animation-name: fade-bot;
+  -webkit-animation-name: fade-bot;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  visibility: visible;
+
+}
+@keyframes fade-bot {
   0% {
     opacity: 0;
     transform: translateY(70%);
@@ -16,7 +47,7 @@
     transform: translateY(0%);
   }
 }
-@-webkit-keyframes slide-bot {
+@-webkit-keyframes fade-bot {
   0% {
     opacity: 0;
     -webkit-transform: translateY(70%);
@@ -26,42 +57,16 @@
     -webkit-transform: translateY(0%);
   }
 }
-.slide-bot-remove {
-  animation-name: slide-bot-remove;
-  -webkit-animation-name: slide-bot-remove;
+
+.fade-anim-left {visibility:hidden;}
+.fade-left{
+  animation-name: fade-left;
+  -webkit-animation-name: fade-left;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   visibility: visible;
 }
-@keyframes slide-bot-remove {
-  0% {
-    opacity: 1;
-    transform: translateY(70%);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(0%);
-  }
-}
-@-webkit-keyframes slide-bot-remove {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(70%);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(0%);
-  }
-}
-.slideanim-left {visibility:hidden;}
-.slide-left{
-  animation-name: slide-left;
-  -webkit-animation-name: slide-left;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  visibility: visible;
-}
-@keyframes slide-left {
+@keyframes fade-left {
   0% {
     opacity: 0;
     transform: translateX(-70%);
@@ -71,7 +76,7 @@
     transform: translateX(0%);
   }
 }
-@-webkit-keyframes slide-left {
+@-webkit-keyframes fade-left {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-70%);
@@ -82,14 +87,14 @@
   }
 }
 
-.slide-left-loop{
-  animation-name: slide-left-loop;
-  -webkit-animation-name: slide-left-loop;
+.fade-left-loop{
+  animation-name: fade-left-loop;
+  -webkit-animation-name: fade-left-loop;
   animation-duration: 6s;
   -webkit-animation-duration: 6s;
   visibility: visible;
 }
-@keyframes slide-left-loop {
+@keyframes fade-left-loop {
   0% {
     opacity: 0;
     transform: translateX(-70%);
@@ -107,16 +112,47 @@
     transform: translateX(70%);
   }
 }
-@-webkit-keyframes slide-left-loop {
+@-webkit-keyframes fade-left-loop {
   0% {
-    opacity: 1;
+    opacity: 0;
     transform: translateX(-70%);
   }
-  50% {
-    opacity: 0;
+  25% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  75% {
+    opacity: 1;
     transform: translateX(0%);
   }
   100% {
     opacity: 0;
-    
+    transform: translateX(70%);
+  } 
+}
+
+.typeout {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: auto; 
+  letter-spacing: .12em; 
+  animation: 
+    typeout 2.5s steps(30, end);
+}
+
+@media screen and (max-width: 600px) {
+  .typeout {
+    overflow: hidden;
+    white-space: normal !important;
+    margin: auto; 
+    letter-spacing: .10em; 
+    animation: 
+      typeout 2.5s steps(20, end);
+  }
+}
+
+/* The typing effect */
+@keyframes typeout {
+  from { width: 0 }
+  to { width: 100% }
 }

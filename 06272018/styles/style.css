@@ -1,0 +1,132 @@
+
+body, html {
+  height: 100%;
+  margin: 0px;
+  font: 400 18px/1.5 "Courier New", sans-serif;
+  color: #373D3F;
+  background-color: #F2F3F4;
+  text-align: left;
+}
+
+ul,li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 7vw;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.inverse-bg {
+  background-color: #107896;
+  color: #FFF;
+}
+
+.container, .container-fluid {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+
+.dateline {
+  text-align: right;
+  font-size: 12px;
+}
+
+.nav-item {
+
+}
+
+#pdfButton {
+  background-color: #EFD469;
+  border: none;
+  border-radius: 4px;
+  color: #373D3F;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color .2s ease-in;
+}
+
+#pdfButton:link {
+  background-color: #EFD469;
+}
+
+#pdfButton:visited {
+  background-color: #EFD469;
+}
+
+#pdfButton:hover {
+  background-color: #BCA136;
+}
+
+#header{
+  text-align: center;
+  font: 400 18px/1.5 "Courier New", sans-serif;
+  color: #FFF;
+  background-color: #093145;
+}
+
+#banner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#summary {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#education {
+
+}
+
+#experience {
+
+}
+
+#projects {
+
+}
+
+#footer {
+  background-color: #093145;
+  color: #FFF;
+}
+
+#contact {
+  line-height: 2.5;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+  font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  .container, .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+  #contact {
+    line-height: 1.5;
+  }
+}
