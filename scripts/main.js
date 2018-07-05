@@ -58,9 +58,6 @@ $(document).ready(function(){
         $(".navbar-brand").replaceWith( "<a class='navbar-brand' href='#''>Edward Guevara</a>");
       } 
     });
-    $(".background").each(function() {
-      
-    });
   });
 })
 
