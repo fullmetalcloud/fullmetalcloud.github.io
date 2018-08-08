@@ -64,7 +64,7 @@ $(document).ready(function(){
 var cCount = 0;
 var bgColors = "#093145,#A3B86C,#DA621E,#C02F1D".split(",");
 var colors = "#EFD469,#000,#FFF,#000".split(",");
-var navTextColor = [true, false, true, false];
+var navTextColor = [true, false, true, true];
 var fonts = "Courier New,Lato,Times New Roman".split(",");
 var titles = "Software Developer,Web Developer,Enthusiastic Learner,Dungeon Master".split(",");
 
